@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Numerics;
 
 namespace FibonacciLogic
 {
     public static class FibonacciNumbers
     {
 
-        public static ulong[] GenerateSequence(int count)
+        public static BigInteger[] GenerateSequence(int count)
         {
             if (count <= 0)
             {
@@ -14,10 +15,10 @@ namespace FibonacciLogic
 
             if (count == 1)
             {
-                return new ulong[] { 1 };
+                return new BigInteger[] { 1 };
             }
 
-            ulong[] numbers = new ulong[count];
+            BigInteger[] numbers = new BigInteger[count];
 
             numbers[0] = 1;
             numbers[1] = 1;
